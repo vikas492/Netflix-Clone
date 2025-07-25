@@ -1,0 +1,109 @@
+.hero{
+    position: relative;
+}
+.banner-img {
+    width: 100%;
+    mask-image: linear-gradient(to right, transparent, black 75%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
+}
+.hero-caption {
+  position : absolute;
+  width: 100%;
+  padding-left: 6%;
+  bottom: 0;
+}
+.caption-image {
+  width: 90%;
+  max-width: 420px;
+  margin-bottom: 30px;
+}
+.hero-caption p{
+  max-width: 700px;
+  font-size: 17px;
+  margin-bottom: 20px;
+  
+}
+.hero-btn{
+    display: flex;
+    gap: 13px;
+    margin-bottom: 50px;
+}
+.hero-btn .btn img{
+  width: 25px;
+}
+.hero-btn .btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #e50914;
+  color: white;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  gap: 10px;
+  font-size: 50 px;
+  font-weight: 600;
+
+}
+.hero-btn .btn.dark-btn {
+  background:#6d6d6eb3;
+  color: white;
+}
+.hero-btn .btn:hover {
+  background-color: #ff000d;
+} 
+.more-cards{
+  padding-left: 6%;
+}
+@media (max-width: 1024px) {
+ .hero-btn{
+    margin-bottom: 30px;
+  }
+  .hero-caption .TitleCards {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .hero-caption p{
+    font-size: 12px;
+  }
+  .hero-btn .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  .hero-caption {
+    padding-left: 4%;
+  }
+  .caption-image {
+    width: 40%;
+    margin-bottom: 10px;
+  }
+  .btmn img {
+    width: 20px;
+  }
+  .more-cards {
+    padding-left: 4%;
+  }
+
+}
+@media (max-width: 480px) {
+  .hero-caption p{
+    font-size: 10px;
+  }
+  .hero-btn .btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  .caption-image {
+    display: none;
+  }
+  .btm img{
+    width: 15px;
+  }
+  .btn{
+    padding: 4px 10px;
+    gap: 5px;
+    font-size: 10px;
+  }
+}

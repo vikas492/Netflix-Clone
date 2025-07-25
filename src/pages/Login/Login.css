@@ -1,0 +1,114 @@
+.Login{
+    height: 100vh;
+    background-image:linear-gradient(#0000007e, #0000007e), url(/background_banner.jpg);
+    padding: 20px 8%;
+}
+.Login-logo {
+  width: 150px;
+
+}
+.Login-Form {
+  width: 100%;
+  max-width: 450px;
+  background: rgba(0,0,0,0.75);
+  border-radius: 4px;
+  padding: 60px;
+  margin: auto;
+}
+.Login-Form h1{
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 28px;
+}
+.Login-Form input{
+    width: 100%;
+    height: 50px;
+    background: #333;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    padding: 16px 20px;
+    font-size: 16px;
+    margin-bottom: 20px ;
+    margin: 12px 0;
+    font-weight: 500;
+  
+}
+.Login-Form input::placeholder{
+   font-size: 16px;
+   font-weight: 500;
+}
+.Login-Form button{
+    width: 100%;
+    height: 50px;
+    background: #e50914;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 16px;
+    margin-top: 15px;
+}  
+.Form-help{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #b3b3b3;
+}
+.Remember {
+  display: flex;
+  align-items: center;
+  gap:5px;
+
+}
+.Remember input{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+.form-switch {
+  margin-top: 6px;
+  color: #737373;
+}
+.form-switch span{
+    margin-left: 6px;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+}
+.loader{
+  width: 100%;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.loader img{
+  width: 60px;
+
+}
+@media (max-width: 500px) {
+  .login{
+    padding: 15px 5%;
+  }
+  .Login-Form {
+    padding: 40px;
+    margin-top: 30px;
+  }
+  .Login-Form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .Login-Form input {
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+  .Login-Form button {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
